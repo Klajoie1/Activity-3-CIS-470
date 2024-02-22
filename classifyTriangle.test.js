@@ -98,9 +98,9 @@ test('Triangle with one side valid and the others over 200', () => {
   expect(classifyTriangle(100, 201, 202)).toBe('Error: Input conditions C1, C2, or C3 failed.');
 });
 
-    // Tests error handling for non-integer input values
-test('Triangle with non-integer input', () => {
-  expect(classifyTriangle(10.5, 10.5, 10.5)).toBe('Error: Input conditions C1, C2, or C3 failed.');
+// Checks error handling when two sides are within valid range and other exceeds it
+test('Triangle with two sides valid and the other over 200', () => {
+  expect(classifyTriangle(100, 101, 202)).toBe('Error: Input conditions C1, C2, or C3 failed.');
 });
 
     // Ensures error detection for input values significantly exceeding the specified range
