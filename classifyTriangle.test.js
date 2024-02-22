@@ -24,7 +24,7 @@ test('Equilateral triangle with maximum valid side lengths', () => {
 
     // Verifies isosceles triangle classification with the smallest possible equal sides
 test('Isosceles triangle with one side at minimum valid length', () => {
-  expect(classifyTriangle(1, 1, 2)).toBe('Isosceles');
+  expect(classifyTriangle(1, 2, 2)).toBe('Isosceles');
 });
 
     // Ensures isosceles triangle classification with the largest possible equal sides
